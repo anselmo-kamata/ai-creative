@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anselmo Kamata | AI Creative Director</title>
+<meta name="description" content="Launch videos and product ads made end to end with AI image and video models, LLMs, editing and motion design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--soft:#f5f6f8;--line:#e6e8ee;--text:#0f1222;--muted:#5d6478;--a1:#6a4dff;--a2:#0bb5e6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--a1)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:#ffffffe6;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;height:64px}
+.logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;color:var(--text);white-space:nowrap}
+.links{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
+.links a:hover{color:var(--text)}
+.cta{margin-left:auto;white-space:nowrap;background:var(--text);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:9px 16px;border-radius:10px}
+
+/* hero */
+.hero{padding:56px 0 30px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.tag{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--a1);background:#6a4dff12;border-radius:99px;padding:6px 12px}
+h1{font-size:clamp(38px,5.4vw,62px);line-height:1.04;letter-spacing:-.03em;margin:18px 0 16px}
+.lead{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:560px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:#fff}
+.btn.primary{background:linear-gradient(90deg,var(--a1),var(--a2));border:0;color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;color:var(--muted);font-size:14px}
+.facts b{color:var(--text)}
+.phones{display:flex;gap:18px;justify-content:center;align-items:flex-end}
+.phone{position:relative;width:min(44%,250px);border-radius:30px;padding:8px;background:#0f1222;box-shadow:0 30px 60px #0f122230}
+.phone video{width:100%;aspect-ratio:9/16;border-radius:23px;display:block;object-fit:cover;background:#000}
+.phone:nth-child(2){transform:translateY(-26px)}
+.phone .lbl{position:absolute;left:16px;bottom:16px;font-size:12px;font-weight:600;color:#fff;background:#0009;padding:4px 10px;border-radius:99px}
+.sound{position:absolute;right:16px;top:16px;border:0;cursor:pointer;font-size:12px;font-weight:700;color:#0f1222;background:#fff;padding:6px 10px;border-radius:99px}
+
+/* sections */
+section{padding:72px 0 8px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--a2)}
+h2{font-size:clamp(28px,3.4vw,40px);letter-spacing:-.02em;line-height:1.12;margin:8px 0 10px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:760px;font-size:17px}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 18px 40px #0f12221a;transform:translateY(-2px)}
+.card .meta{padding:14px 16px 16px}
+.card h3{margin:0 0 3px;font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.chip{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--muted);background:var(--soft);border-radius:99px;padding:3px 10px}
+video,iframe{display:block;width:100%;background:#0f1222;border:0}
+.v916{aspect-ratio:9/16;object-fit:cover}
+.v169{aspect-ratio:16/9}
+.band{background:var(--soft);border-radius:26px;padding:34px 30px;margin-top:6px}
+details{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+summary{cursor:pointer;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:16px}
+.steps div{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--soft);font-size:14.5px;color:var(--muted)}
+.steps b{display:block;color:var(--a1);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.steps img{width:100%;border-radius:10px;margin-top:10px}
+code{font-family:Consolas,monospace;font-size:13px;color:#2b3048;background:var(--soft);border-radius:10px;padding:12px;display:block;white-space:pre-wrap;margin-top:8px}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* toolkit */
+.tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tool{border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:#fff}
+.tool h4{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.t{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;background:var(--soft);border-radius:10px;padding:6px 10px}
+.t img{width:16px;height:16px}
+
+footer{margin-top:80px;background:#0f1222;color:#c9cde0}
+footer .wrap{padding-top:56px;padding-bottom:56px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+footer h2{color:#fff;margin:0}
+footer a{color:#fff}
+@media (max-width:960px){.hero{grid-template-columns:1fr}.g3,.steps,.tools{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.g3,.g2,.steps,.tools{grid-template-columns:1fr}.links{display:none}.hero{padding-top:34px}.phone:nth-child(2){transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a class="logo" href="#">Anselmo Kamata</a>
+ <div class="links"><a href="#launch">Launch film</a><a href="#ugc">AI UGC</a><a href="#app">App launch</a><a href="#brands">Brand explainers</a><a href="#sponsor">Sponsor read</a><a href="#reel">Showreel</a><a href="#toolkit">Toolkit</a></div>
+ <a class="cta" href="mailto:anselmokamata24@gmail.com">Contact</a>
+</div></nav>
+
+<header class="wrap hero">
+ <div>
+  <span class="tag">AI Creative Director · AI Video Producer</span>
+  <h1>Launch videos, <span class="grad">concept to final cut</span>, made with AI.</h1>
+  <p class="lead">I build launch ads end to end: ideas and hooks with LLMs, shots with image and video models, then the edit, sound, captions and motion design. Every piece here was made by me.</p>
+  <div class="btns">
+   <a class="btn primary" href="#launch">Watch the work</a>
+   <a class="btn" href="Anselmo_Kamata_CV.pdf">Download CV</a>
+  </div>
+  <div class="facts"><span><b>Kraków, Poland</b> · CET</span><span><b>Remote</b>, full time, flexible hours</span><span>English · Polish · Spanish · Portuguese</span></div>
+ </div>
+ <div class="phones">
+  <div class="phone"><video src="media/NORDA_UGC_A.mp4" poster="media/NORDA_UGC_A.jpg" autoplay muted loop playsinline></video><button class="sound" aria-label="Turn sound on">Sound on</button><span class="lbl">AI UGC ad</span></div>
+  <div class="phone"><video src="media/NORDA_launch_C.mp4" poster="media/NORDA_launch_C.jpg" autoplay muted loop playsinline></video><button class="sound" aria-label="Turn sound on">Sound on</button><span class="lbl">POV launch hook</span></div>
+ </div>
+</header>
+
+<main class="wrap">
+<section id="launch">
+ <div class="eyebrow">01 · Product launch film</div>
+ <h2>NORDA: one launch, three hooks</h2>
+ <p class="sub">Spec launch for a fictional sparkling water brand. One body and three hooks to test: an impact shot, a macro detail and a POV trend format. 20 s, 9:16.</p>
+ <div class="grid g3">
+  <div class="card"><video class="v916" src="media/NORDA_launch_B.mp4" poster="media/NORDA_launch_B.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook B · Impact</h3><p>"Most water is just wet."</p></div></div>
+  <div class="card"><video class="v916" src="media/NORDA_launch_A.mp4" poster="media/NORDA_launch_A.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook A · Macro detail</h3><p>"Cold, redefined."</p></div></div>
+  <div class="card"><video class="v916" src="media/NORDA_launch_C.mp4" poster="media/NORDA_launch_C.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook C · POV trend</h3><p>"POV: the coldest can on earth"</p></div></div>
+ </div>
+ <details>
+  <summary>How I made it</summary>
+  <div class="steps">
+   <div><b>1 · Concept</b>Brief, script, shot list and hook variations written with Claude and ChatGPT. One idea: sell water like a luxury product.</div>
+   <div><b>2 · Product reference</b>One reference frame of the can made with Nano Banana, used as an ingredient in every shot so the product never changes.<img src="media/frame_02_reveal.jpg" alt="NORDA can reference"></div>
+   <div><b>3 · Shots</b>8 shots generated in Google Flow from written prompts: reveal, splash, flavours, lifestyle, end card and three hooks.<img src="media/frame_03_splash.jpg" alt="Splash shot"></div>
+   <div><b>4 · Edit</b>Voice-over with ElevenLabs, cuts on the beat, captions in the safe area, sound ducked under the voice, colour and exports.<img src="media/frame_04_flavours.jpg" alt="Flavours shot"></div>
+  </div>
+  <code>This exact NORDA can opens with a sharp pop, sparkling water erupts upward in super slow motion with crushed ice and thin slices of lime, droplets frozen in the air, black background, cold blue rim light, macro lens, premium drink commercial, fizz sound.</code>
+ </details>
+</section>
+
+<section id="ugc">
+ <div class="eyebrow">02 · AI UGC ads</div>
+ <h2>Same creator, three openings</h2>
+ <p class="sub">A creator-style ad for the same launch. The creator, her kitchen and the can stay identical in every clip; only the first seconds change. Product cutaways and sticker captions are added in the edit.</p>
+ <div class="grid g3">
+  <div class="card"><video class="v916" src="media/NORDA_UGC_A.mp4" poster="media/NORDA_UGC_A.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook A · Direct</h3><p>"Okay, I need to talk about this can."</p></div></div>
+  <div class="card"><video class="v916" src="media/NORDA_UGC_B.mp4" poster="media/NORDA_UGC_B.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook B · Reaction</h3><p>First sip, surprised face.</p></div></div>
+  <div class="card"><video class="v916" src="media/NORDA_UGC_C.mp4" poster="media/NORDA_UGC_C.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Hook C · Trend line</h3><p>"Things that just make sense."</p></div></div>
+ </div>
+</section>
+
+<section id="app">
+ <div class="eyebrow">03 · App launch · motion design</div>
+ <h2>HOOKMILL: an AI ad studio launch</h2>
+ <p class="sub">Spec launch for a fictional app: hook, problem, product demo, proof and end card. Animated in code with Remotion, voice with ElevenLabs. 9:16 and 16:9 from the same project.</p>
+ <div class="grid" style="grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:start">
+  <div class="card"><video class="v916" src="media/HOOKMILL_launch_916.mp4" poster="media/HOOKMILL_launch_916.jpg" controls playsinline preload="none"></video><div class="meta"><h3>9:16</h3><p>Reels, TikTok, Shorts</p></div></div>
+  <div class="card"><video class="v169" src="media/HOOKMILL_launch_169.mp4" poster="media/HOOKMILL_launch_169.jpg" controls playsinline preload="none"></video><div class="meta"><h3>16:9</h3><p>Website, YouTube, product page</p></div></div>
+ </div>
+</section>
+
+<section id="brands">
+ <div class="eyebrow">04 · Brand explainers</div>
+ <h2>Short product videos for real brands</h2>
+ <p class="sub">Concept shorts I made for brands I applied to: one clear problem, the product in three steps, the result. Clean UI animation, sound design and vertical delivery.</p>
+ <div class="grid g3">
+  <div class="card"><video class="v916" src="media/wp_imagify.mp4" poster="media/wp_imagify.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Imagify · WP Media</h3><p>Same image, much lighter. 10 s.</p></div></div>
+  <div class="card"><video class="v916" src="media/wp_rocket.mp4" poster="media/wp_rocket.jpg" controls playsinline preload="none"></video><div class="meta"><h3>WP Rocket · WP Media</h3><p>A faster WordPress store. 15 s.</p></div></div>
+  <div class="card"><video class="v916" src="media/wp_rocketcdn.mp4" poster="media/wp_rocketcdn.jpg" controls playsinline preload="none"></video><div class="meta"><h3>RocketCDN · WP Media</h3><p>Content close to every visitor. 15 s.</p></div></div>
+  <div class="card"><video class="v916" src="media/seez.mp4" poster="media/seez.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Seez</h3><p>An AI assistant that sells cars 24/7. 15 s.</p></div></div>
+  <div class="card"><video class="v916" src="media/bitcoin_com.mp4" poster="media/bitcoin_com.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Bitcoin.com</h3><p>What is Bitcoin, in 21 seconds.</p></div></div>
+  <div class="card"><video class="v916" src="media/ypai.mp4" poster="media/ypai.jpg" controls playsinline preload="none"></video><div class="meta"><h3>YPAI</h3><p>Annotator training: tight boxes. 14 s.</p></div></div>
+ </div>
+ <p class="note">Concept work, not commissioned by these brands. Numbers in the videos are illustrative; logos belong to their owners.</p>
+</section>
+
+<section id="sponsor">
+ <div class="eyebrow">05 · Sponsor segment</div>
+ <h2>Revolut: a 50-second sponsor read</h2>
+ <p class="sub">A sponsor segment I wrote and animated for my YouTube channel, here in an English version: the problem (forgotten subscriptions), the feature in the app, proof and a clear how-to. UI animation in Remotion, voice with ElevenLabs.</p>
+ <div class="card" style="max-width:900px"><video class="v169" src="media/revolut_en.mp4" poster="media/revolut_en.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Revolut · subscriptions</h3><p>16:9, 52 s, English version.</p></div></div>
+ <p class="note">Not commissioned by Revolut. The Revolut logo belongs to its owner.</p>
+</section>
+
+<section id="reel">
+ <div class="eyebrow">06 · Showreel and motion</div>
+ <h2>More editing, 3D and motion work</h2>
+ <div class="grid g2">
+  <div class="card"><video class="v169" src="media/showreel.mp4" poster="media/showreel.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Showreel 2026</h3><p>Editing and motion design, 30 s.</p></div></div>
+  <div class="card"><iframe class="v169" src="https://www.youtube-nocookie.com/embed/Yi4PBb0mi5k" title="Motion graphics Chicago Dallas" loading="lazy" allowfullscreen></iframe><div class="meta"><h3>Motion graphics · Chicago / Dallas</h3><p>4K map and motion graphics.</p></div></div>
+  <div class="card"><iframe class="v169" src="https://www.youtube-nocookie.com/embed/1W51kSn22xA" title="Seez concept, 3D" loading="lazy" allowfullscreen></iframe><div class="meta"><h3>Seez · 3D concept</h3><p>"Sell cars 24/7", 3D and motion design.</p></div></div>
+  <div class="card"><iframe class="v169" src="https://www.youtube-nocookie.com/embed/AvYSJrsXTcs" title="Kemet Studio presentation" loading="lazy" allowfullscreen></iframe><div class="meta"><h3>Kemet Studio</h3><p>Studio presentation ad.</p></div></div>
+ </div>
+</section>
+
+<section id="toolkit">
+ <div class="eyebrow">How I work</div>
+ <h2>Toolkit</h2>
+ <p class="sub">Brief → LLM (concepts, hooks, scripts, prompts) → image references → video models → voice → edit, sound, captions and motion → 9:16, 1:1, 16:9.</p>
+ <div class="tools">
+  <div class="tool"><h4>Ideas and scripts</h4><div class="chips">
+   <span class="t" data-i="anthropic">Claude</span><span class="t" data-i="openai">ChatGPT</span><span class="t" data-i="googlegemini">Gemini</span></div></div>
+  <div class="tool"><h4>Image</h4><div class="chips">
+   <span class="t" data-i="googlegemini">Nano Banana</span><span class="t">Midjourney</span><span class="t">Higgsfield</span></div></div>
+  <div class="tool"><h4>Video models</h4><div class="chips">
+   <span class="t" data-i="google">Google Flow (Veo)</span><span class="t">Kling</span><span class="t">Runway</span><span class="t" data-i="openai">Sora</span><span class="t">Seedance</span></div></div>
+  <div class="tool"><h4>Voice and avatars</h4><div class="chips">
+   <span class="t" data-i="elevenlabs">ElevenLabs</span><span class="t">HeyGen</span></div></div>
+  <div class="tool"><h4>Edit and motion</h4><div class="chips">
+   <span class="t" data-i="adobepremierepro">Premiere Pro</span><span class="t" data-i="adobeaftereffects">After Effects</span><span class="t" data-i="davinciresolve">DaVinci Resolve</span><span class="t">CapCut</span><span class="t" data-i="remotion">Remotion</span></div></div>
+  <div class="tool"><h4>3D</h4><div class="chips">
+   <span class="t" data-i="blender">Blender</span><span class="t" data-i="unrealengine">Unreal Engine</span></div></div>
+  <div class="tool"><h4>Automation</h4><div class="chips">
+   <span class="t" data-i="anthropic">Claude Code</span><span class="t" data-i="openai">Codex</span><span class="t" data-i="python">Python</span><span class="t" data-i="ffmpeg">FFmpeg</span></div></div>
+  <div class="tool"><h4>Design</h4><div class="chips">
+   <span class="t" data-i="adobephotoshop">Photoshop</span></div></div>
+ </div>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+ <div><h2>Let's make your next launch.</h2><p>Anselmo Kamata · Kraków, Poland · remote, full time</p></div>
+ <div><a href="mailto:anselmokamata24@gmail.com">anselmokamata24@gmail.com</a><br><a href="https://www.linkedin.com/in/anselmo-baku-kamata-b543b1199">LinkedIn</a> · <a href="Anselmo_Kamata_CV.pdf">CV (PDF)</a></div>
+ <p style="width:100%;font-size:13px;color:#8a90a6;margin:0">NORDA and HOOKMILL are fictional brands created for these spec pieces.</p>
+</div></footer>
+
+<script>
+// tool logos (Simple Icons); the name stays if a logo is missing
+document.querySelectorAll('.t[data-i]').forEach(el => {
+  const img = new Image(16, 16);
+  img.alt = '';
+  img.src = 'https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/' + el.dataset.i + '.svg';
+  img.onerror = () => img.remove();
+  el.prepend(img);
+});
+// sound toggle on the hero phones
+document.querySelectorAll('.phone').forEach(p => {
+  const v = p.querySelector('video'), b = p.querySelector('.sound');
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.phone video').forEach(o => { if (o !== v) o.muted = true; });
+    document.querySelectorAll('.phone .sound').forEach(o => { if (o !== b) o.textContent = 'Sound on'; });
+    v.muted = !v.muted; if (!v.muted) { v.currentTime = 0; v.play(); }
+    b.textContent = v.muted ? 'Sound on' : 'Sound off';
+  });
+});
+</script>
+</body>
+</html>
