@@ -78,6 +78,16 @@ code{font-family:Consolas,monospace;font-size:13px;color:#2b3048;background:var(
 .t{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;background:var(--soft);border-radius:10px;padding:6px 10px}
 .t img{width:16px;height:16px}
 
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
+.stats div{background:var(--soft);border-radius:18px;padding:18px 20px}
+.stats b{display:block;font-size:30px;letter-spacing:-.02em;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stats span{color:var(--muted);font-size:14px}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.services div{border:1px solid var(--line);border-radius:18px;padding:20px}
+.services h3{margin:0 0 6px;font-size:18px}
+.services p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:960px){.stats,.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.stats{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr}.stats b{font-size:24px}}
 footer{margin-top:80px;background:#0f1222;color:#c9cde0}
 footer .wrap{padding-top:56px;padding-bottom:56px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
 footer h2{color:#fff;margin:0}
@@ -89,7 +99,7 @@ footer a{color:#fff}
 <body>
 <nav><div class="wrap">
  <a class="logo" href="#">Anselmo Kamata</a>
- <div class="links"><a href="#launch">Launch film</a><a href="#ugc">AI UGC</a><a href="#app">App launch</a><a href="#brands">Brand explainers</a><a href="#sponsor">Sponsor read</a><a href="#reel">Showreel</a><a href="#toolkit">Toolkit</a></div>
+ <div class="links"><a href="#services">Services</a><a href="#launch">Launch film</a><a href="#ugc">AI UGC</a><a href="#app">App launch</a><a href="#brands">Brand explainers</a><a href="#sponsor">Sponsor read</a><a href="#reel">Showreel</a><a href="#toolkit">Toolkit</a></div>
  <a class="cta" href="mailto:anselmokamata24@gmail.com">Contact</a>
 </div></nav>
 
@@ -110,7 +120,29 @@ footer a{color:#fff}
  </div>
 </header>
 
+<div class="wrap">
+ <div class="stats">
+  <div><b>12+ years</b><span>editing video, since 2013</span></div>
+  <div><b>3 years</b><span>paid social ads and reels for the agency BK-Nacao</span></div>
+  <div><b>34K+</b><span>organic views on one educational video</span></div>
+  <div><b>AI + craft</b><span>image and video models with traditional editing</span></div>
+ </div>
+</div>
+
 <main class="wrap">
+<section id="services">
+ <div class="eyebrow">Services</div>
+ <h2>What I can make for you</h2>
+ <div class="services">
+  <div><h3>AI launch videos</h3><p>Product and app launches from concept to final cut, with hook variations to test.</p></div>
+  <div><h3>Video editing</h3><p>Ads, reels, shorts and long-form YouTube: pacing, sound design, colour and captions.</p></div>
+  <div><h3>AI UGC ads</h3><p>Creator-style ads with a consistent AI presenter, cutaways and sticker captions.</p></div>
+  <div><h3>Motion graphics</h3><p>UI animation, explainers and kinetic type in After Effects and Remotion.</p></div>
+  <div><h3>Product explainers</h3><p>Short videos that show a product in three steps, for SaaS, apps and e-commerce.</p></div>
+  <div><h3>3D and design</h3><p>Blender, Unreal Engine and Photoshop for scenes, product shots and thumbnails.</p></div>
+ </div>
+</section>
+
 <section id="launch">
  <div class="eyebrow">01 · Product launch film</div>
  <h2>NORDA: one launch, three hooks</h2>
@@ -156,7 +188,7 @@ footer a{color:#fff}
 <section id="brands">
  <div class="eyebrow">04 · Brand explainers</div>
  <h2>Short product videos for real brands</h2>
- <p class="sub">Concept shorts I made for brands I applied to: one clear problem, the product in three steps, the result. Clean UI animation, sound design and vertical delivery.</p>
+ <p class="sub">Concept shorts I made for brands I applied to: one clear problem, the product in three steps, the result. Clean UI animation, voice-over, sound design and vertical delivery.</p>
  <div class="grid g3">
   <div class="card"><video class="v916" src="media/wp_imagify.mp4" poster="media/wp_imagify.jpg" controls playsinline preload="none"></video><div class="meta"><h3>Imagify · WP Media</h3><p>Same image, much lighter. 10 s.</p></div></div>
   <div class="card"><video class="v916" src="media/wp_rocket.mp4" poster="media/wp_rocket.jpg" controls playsinline preload="none"></video><div class="meta"><h3>WP Rocket · WP Media</h3><p>A faster WordPress store. 15 s.</p></div></div>
